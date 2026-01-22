@@ -56,3 +56,8 @@ log(-x)
 ```
 
 #add figure
+
+```{r}
+#| out-width: "90%"
+knitr::include_graphics("wanna_see_the_code_2x.png")
+```
