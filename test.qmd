@@ -1,0 +1,58 @@
+---
+title: "Test Quarto"
+format: html
+author: AR
+editor: visual
+---
+
+## This is my test Quarto file.
+
+This code does something.
+
+```{r}
+1 + 1
+```
+
+```{r}
+x <- 1
+print(x)
+log(-x)
+```
+
+#exclude source block
+
+```{r}
+#| echo: false
+x <- 2
+print(x)
+log(-x)
+```
+
+#exclude output
+
+```{r}
+#| eval: false
+x <- 3
+print(x)
+long(-x)
+```
+
+#exclude warnings
+
+```{r}
+#| warning: false
+x <- 4
+print(x)
+log(-x)
+```
+
+#suppress everything
+
+```{r}
+#| include: false
+x <- 5
+print(x)
+log(-x)
+```
+
+#add figure
